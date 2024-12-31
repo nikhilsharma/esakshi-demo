@@ -1,0 +1,8 @@
+flowchart TD
+    A[Start] --> B[Log into eSAKSHI Portal]
+    B --> C[Click My Modules]
+    C --> D[Works Received From IDA For Feasibility]
+    D --> E[Select Work with Action Pending]
+    E --> F[Feasible or Unfeasible or Feasible With Fund Enhancement]
+    F --> G[Sent to IDA]
+    G --> H[End]

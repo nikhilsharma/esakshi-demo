@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA / IDA Work Approval Process</title>
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+        .overlay-button-left {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .overlay-button-right {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        let images = ['IA_Main_Approver_Flowchart.png','1.png', '2.jpeg', '3.jpeg'];
+        let currentIndex = 0;
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById('mainImage').src = images[currentIndex];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            document.getElementById('mainImage').src = images[currentIndex];
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <img id="mainImage" src="./IA_Main_Approver_Flowchart.png" alt="Workflow Image" style="width:100%;">
+    <button class="overlay-button" style="top: 60%;" onclick="prevImage()">Previous Step</button>
+    <button class="overlay-button" onclick="nextImage()">Next Step</button>
+</div>
+
+</body>
+</html>

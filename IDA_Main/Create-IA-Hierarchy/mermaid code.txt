@@ -1,0 +1,10 @@
+flowchart TD
+    A[Start] --> B[Log into eSAKSHI Portal]
+    B --> C[My Modules]
+    C --> D[Development Work]
+    D --> E[Work Management]
+    E --> F[Manage IA Pullback]
+    F --> G[Select Approved Work]
+    G --> H[Select Action - Pull Back and Send to IDA]
+    H --> I[Work Flows Back to IDA As Fresh Work]
+    I --> J[End]

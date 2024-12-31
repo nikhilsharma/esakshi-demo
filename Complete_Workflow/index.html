@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Process</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <style>
+    </style> -->
+    <script>
+        let images = ['complete-workflow.jpg', 'phase-I-summary.jpg', 'phase-I/recommending-a-work-by-MP.jpg','phase-I/1-Login.png', 
+        'phase-I/2-My-Modules.png', 'phase-I/3-Add-New-Work-Recommendation.png', 'phase-I/4-Add-Development-Work-Recommendation.png', 
+         'phase-I/5-Enter-IDA-and-Location-Details.png', 'phase-I/6-Click-Submit-And-Enter-OTP.png',
+         'phase-I/7-Work-Submitted.png',
+
+
+         'phase-II/summary-phase-II.jpg', 'phase-II/detailed-phase-II-I.jpg',
+         'phase-II/1-Login.png', 'phase-II/2-My-Modules.png', 'phase-II/3-Development-Work.png', 
+         'phase-II/4-Work-Management.png', 'phase-II/5-Manage-MP-Work-Recommendation.png', 'phase-II/6-View-MP-Work-Recommendation.png',
+
+         'phase-II/Create-IA-Department/1-Login.png',
+         'phase-II/Create-IA-Department/2-My-Modules.png', 'phase-II/Create-IA-Department/3-Development-Work-Click.png',
+         'phase-II/Create-IA-Department/4-Master-Configuration.png', 'phase-II/Create-IA-Department/5-manage-department-IA.png',
+         'phase-II/Create-IA-Department/6-Add-Department.png', 'phase-II/Create-IA-Department/7-Enter-PFMS-Agency-Code.png',
+         'phase-II/Create-IA-Department/8-Fields-are-auto-fetched.png', 'phase-II/Create-IA-Department/9-Click-Save.png',
+         'phase-II/Create-IA-Department/10-New-Department-is-created.png',
+
+         'phase-II/Create-IA-Employees/1-Login.png',
+         'phase-II/Create-IA-Employees/1-My-Modules.png', 'phase-II/Create-IA-Employees/2-Master-Configuration.png',
+         'phase-II/Create-IA-Employees/3-Employee-Configuration.png', 'phase-II/Create-IA-Employees/4-Manage-Employee.png',
+         'phase-II/Create-IA-Employees/5-Add-Employee.png', 'phase-II/Create-IA-Employees/6-Select-Department.png',
+         'phase-II/Create-IA-Employees/7-Enter-Details-of-Employee.png', 'phase-II/Create-IA-Employees/8-Select-Rolegroup-for-IA-Main.png',
+         'phase-II/Create-IA-Employees/9-Click-Save.png', 'phase-II/Create-IA-Employees/10-Note-Username.png',
+         'phase-II/Create-IA-Employees/11-IA-Main-Created.png', 'phase-II/Create-IA-Employees/12-Add-Employee.png',
+         'phase-II/Create-IA-Employees/13-Select-Department.png', 'phase-II/Create-IA-Employees/14-Basic-Details-for-Maker.png',
+         'phase-II/Create-IA-Employees/15-Select-Rolegroup.png', 'phase-II/Create-IA-Employees/16-Click-Save.png',
+         'phase-II/Create-IA-Employees/17-Note-Username.png', 'phase-II/Create-IA-Employees/18-Employee-Made-Add-Employee.png',
+         'phase-II/Create-IA-Employees/19-Select-Department.png', 'phase-II/Create-IA-Employees/20-Enter-Basic-Details.png',
+         'phase-II/Create-IA-Employees/21-Enter-Rolegroup-for-Checker.png', 'phase-II/Create-IA-Employees/22-Click-Save.png',
+         'phase-II/Create-IA-Employees/23-Note-Username.png', 'phase-II/Create-IA-Employees/24-Employee-Made.png',
+
+
+         'phase-II/Create-IA-Hierarchy/1-Login.png',
+         'phase-II/Create-IA-Hierarchy/2-My-Modules.png',
+         'phase-II/Create-IA-Hierarchy/3-Master-Configuration.png', 'phase-II/Create-IA-Hierarchy/4-Manage-Hierarchy.png',
+         'phase-II/Create-IA-Hierarchy/5-Manage-Hierarchy-Establishment.png', 'phase-II/Create-IA-Hierarchy/6-Select-Department-Search-For-Existing-Hierarchy.png',
+         'phase-II/Create-IA-Hierarchy/7-Make-New-Hierarchy-Add.png', 'phase-II/Create-IA-Hierarchy/8-Adding-Hierarchy-Screen.png',
+         'phase-II/Create-IA-Hierarchy/9-Select-Maker-Search-Box.png', 'phase-II/Create-IA-Hierarchy/10-Select-Department.png',
+         'phase-II/Create-IA-Hierarchy/11-Search-Department-and-select.png', 'phase-II/Create-IA-Hierarchy/12-Search-Employees.png',
+         'phase-II/Create-IA-Hierarchy/13-Employees-of-Particular-IA-are-Populated.png', 'phase-II/Create-IA-Hierarchy/14-Select-Employee-Click-Ok.png',
+         'phase-II/Create-IA-Hierarchy/15-Select-Process.png', 'phase-II/Create-IA-Hierarchy/16-Fund-Disbursement-Process.png',
+         'phase-II/Create-IA-Hierarchy/17-Select-Checker.png', 'phase-II/Create-IA-Hierarchy/18-Select-Department.png',
+         'phase-II/Create-IA-Hierarchy/19-Select-Correct-Department.png', 'phase-II/Create-IA-Hierarchy/20-Search-Employees.png',
+         'phase-II/Create-IA-Hierarchy/21-Select-Employee-As-checker.png', 'phase-II/Create-IA-Hierarchy/22-Select-Approver.png',
+         'phase-II/Create-IA-Hierarchy/23-Select-Department.png', 'phase-II/Create-IA-Hierarchy/24-Select-Approver.png',
+         'phase-II/Create-IA-Hierarchy/25-Notice-Approver-is-IDA-Main.png', 'phase-II/Create-IA-Hierarchy/26-Click-Save.png',
+         'phase-II/Create-IA-Hierarchy/27-Hierarchy-Created.png', 'phase-II/Create-IA-Hierarchy/28-View-Hierarchy.png',
+
+          'phase-II/IDA-to-IA-for-Feasibility/1-Login.png', 'phase-II/IDA-to-IA-for-Feasibility/2-My-Modules.png', 
+          'phase-II/IDA-to-IA-for-Feasibility/3-Development-Work.png', 'phase-II/IDA-to-IA-for-Feasibility/4-Work-Management.png', 
+          'phase-II/IDA-to-IA-for-Feasibility/5-Manage-MP-Work-Recommendation.png', 'phase-II/IDA-to-IA-for-Feasibility/6-View-MP-Work-Recommendation.png',  
+          'phase-II/IDA-to-IA-for-Feasibility/7-Select-Work.png', 'phase-II/IDA-to-IA-for-Feasibility/8-Select-IA-And-Send-to-IA.png',
+          'phase-II/IDA-to-IA-for-Feasibility/9-Request-Sent-To-IA.png', 'phase-II/IDA-to-IA-for-Feasibility/9-Status-of-Work-Changes.png',
+
+        
+          'phase-III/IA-Main-Feasibility/1-Login.png', 'phase-III/IA-Main-Feasibility/2-Status-Pending-for-Feasibility.png',
+          'phase-III/IA-Main-Feasibility/3-My-Modules.png', 'phase-III/IA-Main-Feasibility/3-Works-received-from-IDA-for-feasibility.png',
+          'phase-III/IA-Main-Feasibility/4-Status-Action-Pending.png', 'phase-III/IA-Main-Feasibility/5-Select-Work.png',
+          'phase-III/IA-Main-Feasibility/6-Work-Feasibility.png', 'phase-III/IA-Main-Feasibility/7-Sent-to-IDA.png',
+          'phase-III/IA-Main-Feasibility/8-Work-Sent-to-IDA.png', 'phase-III/IA-Main-Feasibility/9-Work-Status-Changes.png',
+          'phase-III/IA-Main-Feasibility/10-Pending-for-feasibility-changes.png',
+
+         'phase-III/IDA-Sanction-to-IA/11-Login-With-IDA.png', 'phase-III/IDA-Sanction-to-IA/12-My-Modules.png',
+         'phase-III/IDA-Sanction-to-IA/13-Development-Work.png', 'phase-III/IDA-Sanction-to-IA/14-Work-Management.png',
+         'phase-III/IDA-Sanction-to-IA/15-Manage-MP-Work-Recommendation.png', 'phase-III/IDA-Sanction-to-IA/16-View-Work-Status.png',
+         'phase-III/IDA-Sanction-to-IA/17-Select-Work.png', 'phase-III/IDA-Sanction-to-IA/18-Approve-Reject-Work.png',
+         'phase-III/IDA-Sanction-to-IA/19-Financial-Sanction-Admin-Sanction.png', 'phase-III/IDA-Sanction-to-IA/21-Submit-Work.png',
+         'phase-III/IDA-Sanction-to-IA/22-Work-Status-after-approval.png',
+
+        'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/1-Login.png', 'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/2-Status-Work.png',
+        'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/3-My Modules.png', 'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/4-Manage-work-after-due-sanction-of-IDA.png',
+        'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/5-Status-of-work.png', 'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/6-Cant-Disbuse-Funds.png',
+        'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/7-Cant-Disbuse-Funds.png', 'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/8-Select-Work.png',
+        'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/9-Checkbox-for-Time-Estimation.png', 'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/10-Estimated-Start-and-End-Date.png',
+        'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/11-Submit.png', 'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/12-Status-Changes-to-Time-Estimation.png',
+        'phase-IV/IA_Main_Manages_Work/1-IA-Main-Views-Work/13-Cant-Disburse-Funds.png', 
+
+
+        'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/1-Login.png',
+        'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/2-My Modules.png', 'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/3-Manage-Vendor-Pending-with-PFMS.png',
+        'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/4-Add-Vendor.png', 'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/5-Fill-Fields.png',
+        'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/6-Click-Add.png', 'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/6-Click-Save.png',
+        'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/7-Vendor-Registered-Successfully.png', 'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/8-See-Status-of-Vendor-Validation.png',
+        'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/9-See-Validated-Vendors.png', 'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/10-Select-Fields.png',
+        'phase-IV/IA_Main_Manages_Work/2-Vendor-Workflow/11-See-Search-Validated-Vendors.png',
+
+
+        'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/1-Login.png', 'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/3-My Modules.png',
+        'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/1-Select-Work-via-IA-Main-Login.png', 'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/2-Checkbox-of-Vendor-Identification.png',
+        'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/3-Select-Vendor.png', 'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/4-Select-Vendor.png',
+        'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/5-Click-OK-Add-Vendors.png', 'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/6-Confirm-Vendors.png',
+        'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/7-Click-Submit.png', 'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/8-Status-of-Work-Changes.png',
+        'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/9-Now-Fund-Disburement-Can-Happen.png', 'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/10-Fund-Disburesemnt-Button.png',
+        'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/11-Select-Work.png', 'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/12-Can-Also-Select-Vendor.png',
+        'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/13-Add-Details.png', 'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/14-Click-Add-And-Validate.png',
+        'phase-IV/IA_Main_Manages_Work/3-Vendor-Selection/15-Map-Holding-Account-First.png',
+
+        'phase-IV/IA_Main_Manages_Work/4-Holding-Account-Mapping/1-Login.png',
+        'phase-IV/IA_Main_Manages_Work/4-Holding-Account-Mapping/2-My-Modules.png', 'phase-IV/IA_Main_Manages_Work/4-Holding-Account-Mapping/3-Holding-Account-Mapping.png',
+        'phase-IV/IA_Main_Manages_Work/4-Holding-Account-Mapping/4-CNA-Account-Already-Added.png', 'phase-IV/IA_Main_Manages_Work/4-Holding-Account-Mapping/5-Click-Add.png',
+        'phase-IV/IA_Main_Manages_Work/4-Holding-Account-Mapping/6-Enter-Mapping-Details.png', 'phase-IV/IA_Main_Manages_Work/4-Holding-Account-Mapping/7-Enter-Mapping-Details.png',
+        'phase-IV/IA_Main_Manages_Work/4-Holding-Account-Mapping/8-Click-Save.png', 'phase-IV/IA_Main_Manages_Work/4-Holding-Account-Mapping/9-Holding-Account-Mapped.png',
+
+
+        'phase-IV/IA_Main_Manages_Work/5-After-Holding-Account-Mapping/1-Select-Work-And-Enter-Details.png', 'phase-IV/IA_Main_Manages_Work/5-After-Holding-Account-Mapping/2-Click-Add-Button.png',
+        'phase-IV/IA_Main_Manages_Work/5-After-Holding-Account-Mapping/3-Enetr-Amount-Details.png', 'phase-IV/IA_Main_Manages_Work/5-After-Holding-Account-Mapping/4-Click-Ok.png',
+        'phase-IV/IA_Main_Manages_Work/5-After-Holding-Account-Mapping/5-Click-Validate.png', 'phase-IV/IA_Main_Manages_Work/5-After-Holding-Account-Mapping/6-Click-Submit.png',
+        'phase-IV/IA_Main_Manages_Work/5-After-Holding-Account-Mapping/7-Confirm.png', 'phase-IV/IA_Main_Manages_Work/5-After-Holding-Account-Mapping/8-Hierarchy-Not-Configured-For-User.png',
+        'phase-IV/IA_Main_Manages_Work/5-After-Holding-Account-Mapping/9-Why-Failed.png', 
+        
+        
+        'phase-IV/2-IA-Maker/1-Login-As-IA-Maker.png', 'phase-IV/2-IA-Maker/2-Status-of-Work.png',
+        'phase-IV/2-IA-Maker/3-My-Modules.png', 'phase-IV/2-IA-Maker/4-Manage-Work-After-Sanction-of-IDA.png',
+        'phase-IV/2-IA-Maker/5-See-Status-of-Work.png', 'phase-IV/2-IA-Maker/6-Select-Work.png',
+        'phase-IV/2-IA-Maker/7-Select-Checkbox-Work-Partially-Complete.png', 'phase-IV/2-IA-Maker/8-Click-Submit.png',
+        'phase-IV/2-IA-Maker/9-See-Status.png', 'phase-IV/2-IA-Maker/10-Click-Fund-Disburement.png',
+        'phase-IV/2-IA-Maker/11-Select-Works.png', 'phase-IV/2-IA-Maker/12-Select-Vendor.png',
+        'phase-IV/2-IA-Maker/13-Click-Add-Link.png', 'phase-IV/2-IA-Maker/13-Click-Add.png',
+        'phase-IV/2-IA-Maker/14-Enter-amount-and-deductions.png', 'phase-IV/2-IA-Maker/15-Click-Validate.png',
+        'phase-IV/2-IA-Maker/16-Click-Submit.png', 'phase-IV/2-IA-Maker/17-File-Forwarded-to-Checker.png',
+
+
+        'phase-IV/3-IA-Checker/1-Login-via-IA-Checker.png', 'phase-IV/3-IA-Checker/2-Inbox-File-Present.png',
+        'phase-IV/3-IA-Checker/3-See-Status-of-Checker-At-IDA-Main.png', 'phase-IV/3-IA-Checker/4-Updated-Role-Group.png',
+        'phase-IV/3-IA-Checker/5-Click-Inbox.png', 'phase-IV/3-IA-Checker/6-Select-Work.png',
+        'phase-IV/3-IA-Checker/7-No-option-to-forward.png', 'phase-IV/3-IA-Checker/8-Login-IDA.png',
+        'phase-IV/3-IA-Checker/9-My-Modules.png', 'phase-IV/3-IA-Checker/10-Open-Left-Side-Option.png',
+        'phase-IV/3-IA-Checker/11-Search-Employee.png', 'phase-IV/3-IA-Checker/12-Select-Manage-Employee.png',
+        'phase-IV/3-IA-Checker/13-Search-Employee.png', 'phase-IV/3-IA-Checker/14-See-Rolegroup.png',
+        'phase-IV/3-IA-Checker/15-Click-to-edit.png', 'phase-IV/3-IA-Checker/16-Add-Rolegroup.png',
+        'phase-IV/3-IA-Checker/17-Add-Worklist-Group.png', 'phase-IV/3-IA-Checker/18-Click-Update.png',
+        'phase-IV/3-IA-Checker/19-Worklist-Updated.png', 'phase-IV/3-IA-Checker/20-Login-Via-IA-Checker.png',
+        'phase-IV/3-IA-Checker/21-Select-Work.png', 'phase-IV/3-IA-Checker/22-Forward-Option-Appears.png',
+        'phase-IV/3-IA-Checker/23-Select-Declaration-and-recommendation.png', 'phase-IV/3-IA-Checker/24-Click-Forward.png',
+        'phase-IV/3-IA-Checker/25-Click-Send-Note-Details.png', 'phase-IV/3-IA-Checker/26-Forwarding-Message-Appears.png',
+        'phase-IV/3-IA-Checker/27-See-Status-In-Inbox.png', 'phase-IV/3-IA-Checker/28-See-Status-In-Outbox.png',
+        'phase-IV/3-IA-Checker/29-See-Currently-With.png', 
+        
+
+        'phase-IV/IA_Main_Manages_Work/6-Fund-Disburement/1-Login-As-IDA-Main.png', 'phase-IV/IA_Main_Manages_Work/6-Fund-Disburement/2-Inbox.png',
+        'phase-IV/IA_Main_Manages_Work/6-Fund-Disburement/3-Select-Work.png', 'phase-IV/IA_Main_Manages_Work/6-Fund-Disburement/3-View-Work-Detail.png',
+        'phase-IV/IA_Main_Manages_Work/6-Fund-Disburement/4-View-Work-Detail.png', 'phase-IV/IA_Main_Manages_Work/6-Fund-Disburement/5-Upload-ePPA-Checkbox-Click.png',
+        'phase-IV/IA_Main_Manages_Work/6-Fund-Disburement/6-Click-Approve.png', 'phase-IV/IA_Main_Manages_Work/6-Fund-Disburement/7-Approved.png',
+        'phase-IV/IA_Main_Manages_Work/6-Fund-Disburement/8-Status-Changes.png', 'phase-IV/IA_Main_Manages_Work/6-Fund-Disburement/9-Status-Changes-At-Maker-level.png',
+
+
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/1-Login-As-MP.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/2-See-Status-of-Available-Funds.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/3-Login-As-IA-Main.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/4-My-Modules.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/5-Manage-work-after-sanction.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/6-Select-Work.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/7-See-Status-of-Work.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/7-See-Status-of-Work-After-Payment-Success.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/8-Check-Mark-Completed.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/9-Status-Changes.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/10-Can-I-do-Payment.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/11-Can-Still-Initiate-Payment.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/12-What-if-I-change-status-again.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/12-Physical-Inspection-Done.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/13-Click-on-physical-inspection-link.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/14-Enter-Details.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/15-Can-Also-Add-Return-Fund-Details.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/15-Return-Fund-Details.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/16-Tick-Checkbox.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/17-Click-Submit-Status-Changes.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/18-Can-I-Do-Fund-Disbursement.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/19-I-Can-Do-Fund-Disbursement.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/20-Select-Work-Again.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/21-Login-As-MP-See-Balance.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/22-Notice-Fund-Available.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/22-Notice-MP-Limit.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/23-Mark-Work-As-Complete.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/24-Fill-Details-Carefully-And-Submit.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/25-See-Warning.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/26-Status-Changes-Work-is-complete.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/27-Can-I-Do-Fund-Disbursement.png', 'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/28-Work-is-not-visible-for-payment-now.png',
+        'phase-IV/IA_Main_Manages_Work/7-Mark-Work-As-Complete/29-Limit-of-MP-has-increased.png', 
+
+        ];
+
+        let currentIndex = 0;
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById('mainImage').src = images[currentIndex];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            document.getElementById('mainImage').src = images[currentIndex];
+        }
+
+        function toggleZoom(event) {
+            const image = event.target;
+            const isZoomed = image.style.transform === 'scale(2)';
+            image.style.transform = isZoomed ? 'scale(1)' : 'scale(2)';
+            image.style.cursor = isZoomed ? 'zoom-in' : 'zoom-out';
+            if (!isZoomed) {
+                image.parentElement.scrollTop = 0; // Scroll to the top when zooming out
+                image.parentElement.scrollLeft = 0; // Scroll to the left when zooming out
+            } else {
+                image.parentElement.scrollTop = (image.clientHeight - image.parentElement.clientHeight) / 2;
+                image.parentElement.scrollLeft = (image.clientWidth - image.parentElement.clientWidth) / 2;
+            }
+        }         
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <!-- Image Container -->
+    <div class="image-container">
+        <img id="mainImage" src="complete-workflow.jpg" alt="Workflow Image">
+    </div>
+
+    <!-- Button Container -->
+    <div class="button-container">
+        <!-- Previous Button -->
+        <button class="overlay-button" onclick="prevImage()">Previous Step</button>
+
+        <!-- Home Button (Centered) -->
+        <a href="#">
+            <button class="home-button" onclick="history.back()">Back to Main Page</button>
+        </a>
+
+        <!-- Next Button -->
+        <button class="overlay-button" onclick="nextImage()">Next Step</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Button Overlay</title>
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+        .overlay-button {
+            position: absolute;
+            top: 50%;
+           ac left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="./1.png" alt="Description of image" style="width:100%;">
+    <button class="overlay-button" onclick="window.location.href='2.html'">Click Me!</button>
+</div>
+
+</body>
+</html>

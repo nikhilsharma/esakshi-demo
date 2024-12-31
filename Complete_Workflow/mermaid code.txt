@@ -1,0 +1,10 @@
+flowchart TD
+    A[Start] --> B[Honble MP Recommends a Work in a District]
+    B --> C[District known as IDA in eSAKSHI Receives the Work in portal]
+    C --> D[IDA sends the work for feasibility to desired Agency knows as IA]
+    D --> E[IA conducts the feasibility on ground and returns the same to IDA]
+    E --> F[IDA sanctions the work to IA]
+    F --> G[IA executes the work on ground]
+    G --> H[IA initiates Fund Disbursement]
+    H --> I[IA Marks the Work As Complete]
+    I --> J[End]

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pullback From IA</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Main container for the entire page */
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Full height of the viewport */
+            justify-content: space-between; /* Space between image and buttons */
+        }
+
+        /* Image Section */
+        .image-container {
+            width: 100%;
+            height: 80%; /* Image will take up 80% of the screen height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mainImage {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Ensure the image scales without distortion */
+        }
+
+        /* Button Section */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+        }
+
+        .overlay-button {
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Home Button Styling */
+        .home-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .home-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        let images = ['1-Login.png', '1-My-Modules.png', '2-Master-Configuration.png', 
+        '3-Employee-Configuration.png', '4-Manage-Employee.png', '5-Add-Employee.png', '6-Select-Department.png', 
+        '7-Enter-Details-of-Employee.png', '8-Select-Rolegroup-for-IA-Main.png', '9-Click-Save.png',
+        '10-Note-Username.png', '11-IA-Main-Created.png', '12-Add-Employee.png', '13-Select-Department.png', 
+        '14-Basic-Details-for-Maker.png', '15-Select-Rolegroup.png', '16-Click-Save.png', '17-Note-Username.png',
+        '18-Employee-Made-Add-Employee.png', '19-Select-Department.png', '20-Enter-Basic-Details.png', '21-Enter-Rolegroup-for-Checker.png',
+        '22-Click-Save.png', '23-Note-Username.png', '24-Employee-Made.png'
+        ];
+
+        let currentIndex = 0;
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById('mainImage').src = images[currentIndex];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            document.getElementById('mainImage').src = images[currentIndex];
+        }
+    </script>
+</head>
+<title>
+    Create IA Department
+</title>
+<body>
+
+<div class="container">
+    <!-- Image Container -->
+    <div class="image-container">
+        <img id="mainImage" src="1-Login.png" alt="Workflow Image">
+    </div>
+
+    <!-- Button Container -->
+    <div class="button-container">
+        <!-- Previous Button -->
+        <button class="overlay-button" onclick="prevImage()">Previous Step</button>
+
+        <!-- Home Button (Centered) -->
+        <a href="#">
+            <button class="home-button" onclick="history.back()">Back to Main Page</button>
+        </a>
+
+        <!-- Next Button -->
+        <button class="overlay-button" onclick="nextImage()">Next Step</button>
+    </div>
+</div>
+
+</body>
+</html>
