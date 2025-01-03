@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IA Maker Fund Disbursement</title>
+    <title>Set Time Estimate</title>
     <style>
         body {
             margin: 0;
@@ -63,13 +63,12 @@
         }
     </style>
     <script>
-        let images = ['IA MAKER WORK FLOW.jpg','1-Login-As-IA-Maker.png', '2-Status-of-Work.png', '3-My-Modules.png',
-                    '4-Manage-Work-After-Sanction-of-IDA.png', '5-See-Status-of-Work.png', '6-Select-Work.png',
-                    '7-Select-Checkbox-Work-Partially-Complete.png', '8-Click-Submit.png', '9-See-Status.png',
-                    '10-Click-Fund-Disburement.png', '11-Select-Works.png', '12-Select-Vendor.png', '13-Click-Add.png',
-                    '13-Click-Add-Link.png', '14-Enter-amount-and-deductions.png', '15-Click-Validate.png', '16-Click-Submit.png',
-                    '17-File-Forwarded-to-Checker.png'
+        let images = ['1-Login-via-IA-Checker.png', '20-Login-Via-IA-Checker.png', '21-Select-Work.png', '22-Forward-Option-Appears.png', 
+        '23-Select-Declaration-and-recommendation.png', '24-Click-Forward.png', '25-Click-Send-Note-Details.png',
+        '26-Forwarding-Message-Appears.png', 
+        '27-See-Status-In-Inbox.png', '28-See-Status-In-Outbox.png', '29-See-Currently-With.png'
         ];
+
         let currentIndex = 0;
 
         function nextImage() {
@@ -84,25 +83,27 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Image Container -->
-        <div class="image-container">
-            <img id="mainImage" src="IA MAKER WORK FLOW.jpg" alt="Workflow Image">
-        </div>
-    
-        <!-- Button Container -->
-        <div class="button-container">
-            <!-- Previous Button -->
-            <button class="overlay-button" onclick="prevImage()">Previous Step</button>
-    
-            <!-- Home Button (Centered) -->
-            <a href="#">
-                <button class="home-button" onclick="history.back()">Back to Main Page</button>
-            </a>
-    
-            <!-- Next Button -->
-            <button class="overlay-button" onclick="nextImage()">Next Step</button>
-        </div>
-    </div>    
+
+<div class="container">
+    <!-- Image Container -->
+    <div class="image-container">
+        <img id="mainImage" src="1-Login-via-IA-Checker.png" alt="Workflow Image">
+    </div>
+
+    <!-- Button Container -->
+    <div class="button-container">
+        <!-- Previous Button -->
+        <button class="overlay-button" onclick="prevImage()">Previous Step</button>
+
+        <!-- Home Button (Centered) -->
+        <a href="#">
+            <button class="home-button" onclick="history.back()">Back to Main Page</button>
+        </a>
+
+        <!-- Next Button -->
+        <button class="overlay-button" onclick="nextImage()">Next Step</button>
+    </div>
+</div>
+
 </body>
 </html>
