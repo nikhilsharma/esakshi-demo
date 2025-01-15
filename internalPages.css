@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* Main container for the entire page */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+    justify-content: space-between; /* Space between image and buttons */
+}
+
+/* Image Section */
+.image-container {
+    display: grid;
+    justify-content: center;
+    overflow-x: auto;
+    width: 100%;
+}
+#mainImage {
+    /* object-fit: contain; Ensure the image scales without distortion */
+    padding-block-start: 1rem;
+    padding-inline-start: 0.25rem;
+    /* width: 98%; */
+    min-width: 98%;
+}
+
+/* Button Section */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+.overlay-button {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Home Button Styling */
+.home-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.home-button:hover {
+    background-color: #45a049;
+}
